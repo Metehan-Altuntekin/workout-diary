@@ -9,7 +9,7 @@ const Header = ({ isOpen, setIsOpen }) => {
       <h1>Welcome Larry</h1>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/workout">Workout</Link>
+        <Link to="/workout/start-workout">Workout</Link>
         <Link to="/stats">Stats</Link>
         <Link to="/settings">Settings</Link>
         <button

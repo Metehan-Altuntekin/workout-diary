@@ -7,9 +7,11 @@ const Workout = () => {
     <>
       <nav>
         <Link to="start-workout">Start Workout</Link>
+        <Link to="add-workout">Add Workout</Link>
       </nav>
       <Routes>
-        <Route path="/start-workout" element={<StartWorkout />} />
+        <Route index path="/start-workout" element={<StartWorkout />} />
+        <Route path="/add-workout" element={<AddWorkout />} />
       </Routes>
     </>
   );
