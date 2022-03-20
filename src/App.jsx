@@ -12,14 +12,16 @@ function App() {
   return (
     <>
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/workout" element={<Workout />}>
-          <Route path="start-workout" element={<StartWorkout />} />
-        </Route>
-        <Route path="/stats" element={<Stats />} />
-        <Route path="/settings" element={<Settings />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/workout" element={<Workout />}>
+            <Route path="start-workout" element={<StartWorkout />} />
+          </Route>
+          <Route path="/stats" element={<Stats />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+      </main>
       <Outlet />
     </>
   );

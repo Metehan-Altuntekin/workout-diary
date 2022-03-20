@@ -3,6 +3,7 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   color: white;
   font-family: Spartan, sans-serif;
   text-decoration: none;
@@ -12,15 +13,22 @@ body{
   background-color: $bg;
 
   header{
+    @include padding-sides;
+    
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+
     nav{
 
       a{
 
       }
     }
+  }
+  main{
+    @include padding-sides;
   }
 }

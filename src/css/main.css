@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: white;
   font-family: Spartan, sans-serif;
   text-decoration: none;
@@ -11,6 +13,8 @@ body {
 }
 
 body header {
+  padding-left: clamp(10px, 7vw, 250px);
+  padding-right: clamp(10px, 7vw, 250px);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,5 +25,34 @@ body header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 1200px) {
+  body header {
+    padding-left: 10vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body header {
+    padding-right: 10vw;
+  }
+}
+
+body main {
+  padding-left: clamp(10px, 7vw, 250px);
+  padding-right: clamp(10px, 7vw, 250px);
+}
+
+@media screen and (min-width: 1200px) {
+  body main {
+    padding-left: 10vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body main {
+    padding-right: 10vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */
