@@ -1,25 +1,30 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Account from "./Account";
-import Home from "../assets/icons/HomeIcon.jsx";
+
+//Header nav icons (SVG)
+import HomeIcon from "../assets/icons/as-component/home-icon.jsx";
+import WorkoutIcon from "../assets/icons/as-component/workout-icon.jsx";
+import StatsIcon from "../assets/icons/as-component/stats-icon.jsx";
+import SettingsIcon from "../assets/icons/as-component/settings-icon";
+import AccountIcon from "../assets/icons/as-component/account-icon";
+
 const Header = ({ isOpen, setIsOpen }) => {
   console.log(isOpen);
   return (
     <header>
-      <h1>Welcome Larry</h1>
+      <h1>Welcome, Larry</h1>
       <nav>
-        <Link to="/">
-          <Home />
-        </Link>
-        <Link to="/workout/start-workout">Workout</Link>
-        <Link to="/stats">Stats</Link>
-        <Link to="/settings">Settings</Link>
+        <Link to="/"> <HomeIcon /> </Link>
+        <Link to="/workout/start-workout"> <WorkoutIcon /> </Link>
+        <Link to="/stats"> <StatsIcon /> </Link>
+        <Link to="/settings"> <SettingsIcon /> </Link>
         <button
           onClick={() => {
             setIsOpen(!isOpen);
           }}
         >
-          PROFILE PAGE
+          <AccountIcon />
         </button>
         {isOpen ? <Account /> : null}
       </nav>

@@ -1,7 +1,20 @@
 $bg: #111122;
-$button-red: #FF3131;
+$header-bg: #131137;
+
+$button-red: #FF3131;             //On primer call to action buttons
+$button-red-hover: #AB1C1C;       //Hover
+$button-red-click: #531919;       //Pressed
+
+$button-dark-red: #C83636;        //On delete buttons
+$button-nav-selected: #B44141;    //On the icon of the active page on header nav
+
+$button-dark-blue: #4C3FDA;       //On small edit and save buttons
+
+$blue-light-pastel: #7169C3;      //On weight indicator at workout lists
+$blue-mid-grayish: #4E4E6B;       //On input backgrounds
+
 $button-primer: $button-red;
-$
+$button-delete: $button-dark-red;
 
 //Device widths
 $mobile-max: 800px;
