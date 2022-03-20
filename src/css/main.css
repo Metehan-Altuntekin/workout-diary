@@ -13,8 +13,8 @@ body {
 }
 
 body header {
-  padding-left: clamp(10px, 7vw, 250px);
-  padding-right: clamp(10px, 7vw, 250px);
+  padding-left: clamp(10px, 4vw, 150px);
+  padding-right: clamp(10px, 4vw, 150px);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,8 +40,8 @@ body header {
 }
 
 body main {
-  padding-left: clamp(10px, 7vw, 250px);
-  padding-right: clamp(10px, 7vw, 250px);
+  padding-left: clamp(10px, 4vw, 150px);
+  padding-right: clamp(10px, 4vw, 150px);
 }
 
 @media screen and (min-width: 1200px) {
