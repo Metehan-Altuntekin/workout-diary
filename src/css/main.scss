@@ -1,0 +1,26 @@
+@import "utilities";
+
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: Spartan, sans-serif;
+  text-decoration: none;
+}
+
+body{
+  background-color: $bg;
+
+  header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav{
+
+      a{
+
+      }
+    }
+  }
+}
