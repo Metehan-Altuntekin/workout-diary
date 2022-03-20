@@ -6,7 +6,9 @@ import Stats from "./Pages/Stats";
 import Settings from "./Pages/Settings";
 import Account from "./Components/Account";
 import StartWorkout from "./Pages/Workout-Sections/StartWorkout";
+import AddWorkout from "./Pages/Workout-Sections/AddWorkout";
 import { useState } from "react";
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -14,8 +16,9 @@ function App() {
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/workout" element={<Workout />}>
+        <Route path="/workout/*" element={<Workout />}>
           <Route path="start-workout" element={<StartWorkout />} />
+          <Route path="add-workout" element={<AddWorkout />} />
         </Route>
         <Route path="/stats" element={<Stats />} />
         <Route path="/settings" element={<Settings />} />
