@@ -12,6 +12,10 @@ const CardWorkout = (props) => {
   console.log(props.Name);
   return (
     <div>
+      <div className="bg">
+        <img src={Image} alt="" />
+        <div className="shade"></div>
+      </div>
       <h1>{Name}</h1>
       <h2>{Description}</h2>
       <button>Start</button>

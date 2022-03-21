@@ -8,7 +8,7 @@ const StartWorkout = () => {
   return (
     <>
       {WorkoutTypeCard.map((card) => (
-        <div key={card.id}>
+        <div key={card.id} className="">
           <CardWorkout
             Id={card.id}
             Name={card.name}
