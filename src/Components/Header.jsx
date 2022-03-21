@@ -10,15 +10,26 @@ import SettingsIcon from "../assets/icons/as-component/settings-icon";
 import AccountIcon from "../assets/icons/as-component/account-icon";
 
 const Header = ({ isOpen, setIsOpen }) => {
-  console.log(isOpen);
   return (
     <header>
       <h1>Welcome, Larry</h1>
       <nav>
-        <Link to="/"> <HomeIcon /> </Link>
-        <Link to="/workout/start-workout"> <WorkoutIcon /> </Link>
-        <Link to="/stats"> <StatsIcon /> </Link>
-        <Link to="/settings"> <SettingsIcon /> </Link>
+        <Link to="/">
+          {" "}
+          <HomeIcon />{" "}
+        </Link>
+        <Link to="/workout/start-workout">
+          {" "}
+          <WorkoutIcon />{" "}
+        </Link>
+        <Link to="/stats">
+          {" "}
+          <StatsIcon />{" "}
+        </Link>
+        <Link to="/settings">
+          {" "}
+          <SettingsIcon />{" "}
+        </Link>
         <button
           onClick={() => {
             setIsOpen(!isOpen);
