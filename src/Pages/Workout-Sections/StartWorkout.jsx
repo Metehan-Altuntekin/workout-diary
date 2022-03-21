@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import MainContext from "../../Context/MainContext";
-import CardWorkout from "./CardWorkout";
+import CardWorkout from "./start-workout/WorkoutTypes";
 const StartWorkout = () => {
   const WorkoutTypeCard = useContext(MainContext);
   console.log(WorkoutTypeCard);
