@@ -64,5 +64,27 @@ body{
   }
   main{
     @include padding-sides;
+
+    nav.sections{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(99, auto);
+      gap: 2rem;
+      margin: 5vh 0;
+      //border-bottom: 2px solid #444;
+      box-shadow: inset 0px -3px #444;
+      a{
+        font-family: Raleway, sans-serif;
+        font-size: clamp(1rem, 1.5vmax, 1.6rem);
+        white-space: nowrap;
+        color: #aaa;
+        padding-bottom: 0.2em;
+
+        &.active{
+          color: #fff;
+          border-bottom: 5px solid #DE4E4E;
+        }
+      }
+    }
   }
 }

@@ -113,4 +113,29 @@ body main {
     padding-right: 10vw;
   }
 }
+
+body main nav.sections {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[99];
+      grid-template-columns: repeat(99, auto);
+  gap: 2rem;
+  margin: 5vh 0;
+  -webkit-box-shadow: inset 0px -3px #444;
+          box-shadow: inset 0px -3px #444;
+}
+
+body main nav.sections a {
+  font-family: Raleway, sans-serif;
+  font-size: clamp(1rem, 1.5vmax, 1.6rem);
+  white-space: nowrap;
+  color: #aaa;
+  padding-bottom: 0.2em;
+}
+
+body main nav.sections a.active {
+  color: #fff;
+  border-bottom: 5px solid #DE4E4E;
+}
 /*# sourceMappingURL=main.css.map */
